@@ -11,6 +11,7 @@ class App extends Component {
       dishes: DISHES,
     };
   }
+  render() {
     return (
       <div className="App">
         <Navbar dark color="primary">
@@ -21,7 +22,7 @@ class App extends Component {
         <Menu dishes={this.state.dishes} />
       </div>
     );
-  
+  }
 }
 
 export default App;
