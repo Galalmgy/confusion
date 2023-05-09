@@ -6,6 +6,12 @@ class Dishdetail extends Component {
     super(props);
     this.state = { dish: this.props.dish };
   }
+  componentDidMount() {
+    console.log("Dishdetail Component componentDidMount invoked");
+  }
+  componentDidUpdate() {
+    console.log("Dishdetail Component componentDidUpdate invoked");
+  }
   renderDish(dish) {
     return (
       <div className="col-12 col-md-5 m-1 ">
@@ -48,6 +54,7 @@ class Dishdetail extends Component {
   }
 
   render() {
+    console.log("Dishdetail component render invoked");
     if (this.props.dish != null) {
       return (
         <div className="container">
